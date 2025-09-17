@@ -1,106 +1,54 @@
-FarmLoom
+# FarmLoom
 
 FarmLoom is a web platform designed for wholesale crop trading, connecting farmers and consumers seamlessly. The project is still under development but aims to provide a reliable marketplace with rich features for both sellers and buyers.
 
-Architecture
+## Deployed Link
 
-(Add your architecture diagram here when available)
+🚧 *Not yet hosted. Will be updated once deployment is complete.*
 
-Features
+## Architecture
 
-Dual Interfaces: FarmLoom provides separate interfaces for consumers and farmers, with authentication (SignUp/SignIn) and email verification.
+*(Add your architecture diagram here when available)*
 
-Farmer Side
+## Features
 
-Sales Analytics: Integrated charts and graphs to help farmers track their sales performance.
+1. **Dual Interfaces**: FarmLoom provides separate interfaces for consumers and farmers, with authentication (SignUp/SignIn) and email verification.
 
-Product Management: Farmers can add, edit, and delete crops with details such as images, stock, location (map-based), and minimum order quantity.
+### Farmer Side
 
-Order Dashboard: A centralized dashboard where farmers can manage incoming orders and view customer locations on a map.
+2. **Sales Analytics**: Integrated charts and graphs to help farmers track their sales performance.
 
-FAQ Section: Farmers can answer common questions, which are displayed publicly for consumers.
+3. **Product Management**: Farmers can add, edit, and delete crops with details such as images, stock, location (map-based), and minimum order quantity.
 
-Consumer Side
+4. **Order Dashboard**: A centralized dashboard where farmers can manage incoming orders and view customer locations on a map.
 
-Simple Browsing Experience: Consumers can explore categories and products easily from the homepage.
+5. **FAQ Section**: Farmers can answer common questions, which are displayed publicly for consumers.
 
-Product Dashboard: Detailed product pages include stock availability, pricing, and order restrictions.
+### Consumer Side
 
-Reviews & Ratings: Consumers can leave feedback on products, ensuring transparency.
+6. **Simple Browsing Experience**: Consumers can explore categories and products easily from the homepage.
 
-Direct Contact Form: A built-in form allows consumers to send inquiries directly to farmers. Resolved queries appear in the FAQ section.
+7. **Product Dashboard**: Detailed product pages include stock availability, pricing, and order restrictions.
 
-Cart & Checkout: Consumers can add products to their cart, manage quantities, and securely place orders.
+8. **Reviews & Ratings**: Consumers can leave feedback on products, ensuring transparency.
 
-Real-Time Updates (WebSocket): Planned feature for live stock updates without refreshing the page (works in local environment, not on free hosting like Vercel).
+9. **Direct Contact Form**: A built-in form allows consumers to send inquiries directly to farmers. Resolved queries appear in the FAQ section.
 
-Technologies Used
+10. **Cart & Checkout**: Consumers can add products to their cart, manage quantities, and securely place orders.
 
-MongoDB
+11. **Real-Time Updates (WebSocket)**: Planned feature for live stock updates without refreshing the page (works in local environment, not on free hosting like Vercel).
 
-NodeJS
+## Technologies Used
 
-ExpressJS
-
-ReactJS
-
-Redux
-
-CSS (or Tailwind, if you plan to add it later)
-
-WebSocket (socket.io)
-
-Cloudinary (for image storage)
-
-Leaflet (map integration)
-
-Recharts (data visualization)
-
-Installation
-
-To run FarmLoom locally, ensure you have NodeJS and MongoDB installed.
-
-Clone the repository
-
-git clone <repository-url>
-cd FarmLoom
+- MongoDB  
+- NodeJS  
+- ExpressJS  
+- ReactJS  
+- Redux  
+- CSS (or Tailwind, if you plan to add it later)  
+- WebSocket (socket.io)  
+- Cloudinary (for image storage)  
+- Leaflet (map integration)  
+- Recharts (data visualization)  
 
 
-Frontend Setup
-
-Navigate to the client folder.
-
-Create a .env file in client root with:
-
-VITE_FARMLOOM_API = "http://localhost:8080/"
-
-
-Run the frontend:
-
-cd client
-npm install
-npm run dev
-
-
-Backend Setup
-
-Navigate to the server folder.
-
-Create a .env file in server root with:
-
-MONGO_DB_URL = {your mongodb url}
-JWT_SECRET = {jwt secret}
-CLOUDINARY_CLOUD_NAME = {cloudinary cloud name}
-CLOUDINARY_API_KEY = {cloudinary api key}
-CLOUDINARY_API_SECRET = {cloudinary api secret}
-
-
-Run the backend:
-
-cd server
-npm install
-nodemon
-
-Contribution
-
-FarmLoom is open to contributions. Feel free to fork the repository, raise issues, or submit pull requests to help improve the platform.
